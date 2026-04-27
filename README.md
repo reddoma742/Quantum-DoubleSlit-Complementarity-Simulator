@@ -1,3 +1,5 @@
+![Berramdane Model Result](images/result_V9.3.png)
+
 # Quantum-DoubleSlit-Complementarity-Simulator
 Interactive simulation of Young's double-slit experiment with gradual transition from interference to particle behavior via path measurement strength.
 # مـحـاكـاة تـجـربـة الـشـق الـمـزدوج الـكـمـي – نـمـوذج بـالـرمـضان V9.3
