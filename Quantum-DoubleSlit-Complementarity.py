@@ -178,7 +178,25 @@ def interactive_lab(v_mean, delta_v, a_width, d_slit, observer_active, meas_stre
 if __name__ == "__main__":
     print("This code is intended for Jupyter Notebook / Google Colab.\n"
           "Please run it in an interactive environment to see the widgets.")
+# ========== إضافة حساب الزوايا لـ V9.3 ==========
+def compute_angles(v_mean, a_width, d_slit, L):
+    """
+    تحسب زاوية أول هدب تداخل (first interference maximum) وزاوية أول عقدة حيود (first diffraction minimum).
+    تستخدم التقريب للزوايا الصغيرة: θ (rad) ≈ λ / d  و θ (rad) ≈ λ / a.
+    """
+    lam = de_broglie_wavelength(v_mean)
+    # زاوية أول هدب تداخل (m=1): θ_interference = λ / d_slit
+    theta_interference_rad = lam / d_slit
+    theta_interference_deg = theta_interference_rad * 180 / np.pi
+    # زاوية أول عقدة حيود (n=1): θ_diffraction = λ / a_width
+    theta_diffraction_rad = lam / a_width
+    theta_diffraction_deg = theta_diffraction_rad * 180 / np.pi
+    return (theta_interference_rad, theta_interference_deg,
+            theta_diffraction_rad, theta_diffraction_deg)
 
+# أضف هذا السطر داخل interactive_lab، مثلاً بعد حساب visibility وقبل إنشاء الشكل
+# يمكنك وضعه في أي مكان قبل plt.show()، لكن الأفضل بعد طباعة المعلومات الحالية.
+# سأعطيك الجزء المعدل من interactive_lab بدلاً من ذلك.
 
 Fix V9.3 with correct exponent syntax.
    
