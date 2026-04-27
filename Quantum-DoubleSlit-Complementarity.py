@@ -1,3 +1,10 @@
+"""
+Berramdane Double‑Slit Quantum Simulator V9.3
+For interactive use, please run this code in Jupyter Notebook or Google Colab.
+This script version will not display widgets properly in a terminal.
+"""
+
+
 -- coding: utf-8 --
 """
 Berramdane Model V9.3 – Clean & Complete Complementarity Simulation
